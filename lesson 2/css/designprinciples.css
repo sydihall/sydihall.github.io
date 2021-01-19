@@ -24,16 +24,26 @@ main article {
 	background-color: #eee;
 }
 .screenshots{
-	max-width: 200px;
+	width: 100%;
 }
 #headings{
 	text-align: center;
 }
+
+@media only screen and (min-width: 30em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	/*article:nth-child(3) {
+		grid-column: span 1;
+	}*/
+}
+
 @media only screen and (min-width: 60em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	article:nth-child(3) {
+	/*article:nth-child(3) {
 		grid-column: span 1;
-	}
+	}*/
 }
