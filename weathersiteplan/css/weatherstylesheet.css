@@ -17,6 +17,9 @@ body {
     padding-top: 50px;
     padding-bottom: 10px;
 }
+#maintitle{
+    text-align: center;
+}
 header, footer {
     background-color: #3C6A75;
     color: white;

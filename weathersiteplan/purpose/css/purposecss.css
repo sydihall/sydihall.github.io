@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+  body {
+	margin: 0 auto;
+	max-width: 800px;
+	font-family: 'Noto Sans', serif;
+	background-color: white;
+	grid-gap: 3em;
+	padding: 1em;
+	text-align: center;
+   }
+
+main {
+	/*display: grid;*/
+	/*grid-template-columns: 1fr;*/
+	font-size: 0.8rem;
+}
+main article {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+.screenshots{
+	width: 100%;
+}
+#headings{
+    text-align: center;
+}
+
+#serifsample{
+    font-family: serif;
+}
+
+#leftalign{
+    text-align: left;
+}
+
+@media only screen and (min-width: 30em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+}
