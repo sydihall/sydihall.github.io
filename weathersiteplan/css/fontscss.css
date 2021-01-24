@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-  body {
+body {
 	margin: 0 auto;
 	max-width: 800px;
 	font-family: 'Noto Sans', serif;
@@ -8,8 +8,33 @@
 	grid-gap: 3em;
 	padding: 1em;
 	text-align: center;
-   }
-
+}
+nav {
+    background-color: lightgray;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+    padding: 0 15px;
+}
+nav ul { 
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    display: grid;
+    /*grid-template-columns: repeat(5, 1fr);*/
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+}
+nav ul li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav h2 {
+    border-bottom: 1px solid black;
+}
 main {
 	display: grid;
 	grid-template-columns: 1fr;
