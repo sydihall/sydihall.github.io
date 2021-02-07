@@ -1,6 +1,6 @@
 body {
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 100%;
 	font-family: 'Merriweather Sans', sans-serif;
 	background-color:white;
 	grid-gap: 3em;
@@ -16,8 +16,15 @@ body {
     max-width: 10%;
     float: center;
 }
+#title {
+    padding: 5px;
+    font-size:xx-large;
+}
 body {
     align-items: center;
+}
+.active {
+    background-color: #3C6A75;
 }
 nav {
     margin : 0 auto;
@@ -54,6 +61,25 @@ nav {
     background-color: black;
 }
 
+#ban {
+    background-color: #fcce36;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    grid-template-columns: auto;
+    position: sticky;
+    top: 0;
+    letter-spacing: 1.5px;
+    margin: 0 auto;
+    font-size: large;
+    text-align: center;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
 #navigation.responsive li {
     display:block;
 }
@@ -62,12 +88,16 @@ main {
     grid-template-columns: auto auto;
     text-align: center;
 }
+.middle {
+    max-width: 860px;
+    margin: 0 auto;
+
+}
 footer {
     text-align: center;
     background-color: #3C6A75;
     max-width: 100%;
     text-align: center;
-
 }
 #footer {
     list-style: none;
@@ -92,12 +122,18 @@ footer {
     #navigation li:first-child {
         display:none;
     }
+    .hidden {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 54.5em){
     #navigation {
         width:800px;
         margin:16px auto;
+    }
+    .hidden {
+        display: none;
     }
 }
 
