@@ -1,8 +1,8 @@
 body {
 	margin: 0 auto;
 	max-width: 100%;
-	font-family: 'Merriweather Sans', sans-serif;
-	background-color:white;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color:white;
 	grid-gap: 3em;
 	padding: 1em;
 	text-align: center;
@@ -64,7 +64,7 @@ nav {
 #ban {
     background-color: #fcce36;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: block;
+    display: hidden;
     grid-template-columns: auto;
     position: sticky;
     top: 0;
