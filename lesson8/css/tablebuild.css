@@ -4,7 +4,7 @@ body {
 }
 .users {
     max-width: 850px;
-    width: 50%;
+    width: 35%;
     border-collapse: collapse;
     background-color: #e7f0ed;
     font-size: 14px;
