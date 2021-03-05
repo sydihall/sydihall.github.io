@@ -1,0 +1,38 @@
+main {
+    box-shadow: 0 0 20px #333;
+}
+
+.person {
+    margin: 0 auto;
+}
+
+h1 {
+    color: black;
+}
+
+header {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: 0 0 20px #333;
+}
+
+section {
+    display: block;
+    text-align: center;
+    margin: 5px 25px;
+    background-color: rgb(209, 231, 238);
+    border-style: ridge;
+    max-width: 325px;
+}
+
+h2,
+p {
+    text-align: left;
+    margin-left: 55px;
+}
