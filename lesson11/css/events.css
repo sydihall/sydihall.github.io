@@ -1,0 +1,59 @@
+/*
+background-color: #338dd9 // 1
+background-color: #4bb6d8 // 2
+background-color: #4bb6d8 // 3
+background-color: #76d1f0 // 4 
+
+*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+#todays-date {
+    color: #c5c5c5;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3, h4 {
+    font-style: italic;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calendar {
+    background-color: #338dd9;
+    padding: 15px;
+}
+
+.calendar:nth-child(2n)
+{
+    background-color: #4bb6d8;
+}
+
+
+/* section {
+    background-color-1: #338dd9;
+}
+
+
+.card-1 {
+    background-color-1: #338dd9;
+} */
+
