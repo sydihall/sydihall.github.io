@@ -1,6 +1,6 @@
 window.addEventListener('load', async ()=>{
-    let prestonForecast = "http://api.openweathermap.org/data/2.5/forecast?q=Preston,ID,US&id=5604473&appid=618f5cc873c6aa9fb8dfc23fe6b7980f&units=imperial";
-    let prestonSummary = "http://api.openweathermap.org/data/2.5/weather?q=Preston,ID,US&id=5604473&appid=618f5cc873c6aa9fb8dfc23fe6b7980f&units=imperial";
+    let prestonForecast = "https://api.openweathermap.org/data/2.5/forecast?q=Preston,ID,US&id=5604473&appid=618f5cc873c6aa9fb8dfc23fe6b7980f&units=imperial";
+    let prestonSummary = "https://api.openweathermap.org/data/2.5/weather?q=Preston,ID,US&id=5604473&appid=618f5cc873c6aa9fb8dfc23fe6b7980f&units=imperial";
 
     prestonForecast = (await(await fetch(prestonForecast)).json()).list.filter(time => (time.dt + 21600) % 86400 == 0);
     prestonSummary = await(await fetch(prestonSummary)).json()
