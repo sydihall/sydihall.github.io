@@ -1,0 +1,68 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+table {
+    border-collapse: collapse;
+    color: #89abbc;
+    margin: auto;
+    padding: .5em;
+    margin-top: 2%;
+}
+.volleyball {
+        max-width: 750px;
+        width: 100%;
+        border-collapse: collapse;
+        color: #89abbc;
+        font-size: 14px;
+        margin: 0 auto;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        overflow: hidden;
+        border: 1px solid grey;
+        text-align: center;
+        box-shadow: 5px 10px 15px#888888;
+}
+
+
+#h td a:hover{
+
+background-color: #dbe4ea;
+
+}
+.names {
+    background-color: #89abbc;
+    color: white;
+    letter-spacing: 2.5px;
+}
+thead {
+    font-size: 3.5em;
+    letter-spacing: .1em;
+}
+thead img {
+    max-width: 100px;
+}
+tr:nth-child(2n) {
+    background-color: #f5f5f8;
+}
+td{
+    border: 1px solid grey;
+    padding: .5em;
+}
+.good {
+    background-color:#95d600;
+    color: white;
+}
+.header {
+    font-size: 1.5em;
+    white-space: nowrap;
+    background-color:#004d71;
+   
+}
+
+
+#overall {
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #004d71;
+    letter-spacing: .1em;
+}
