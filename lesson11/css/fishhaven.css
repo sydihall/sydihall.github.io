@@ -116,6 +116,24 @@ main {
     background-color: #76B2C2;
     list-style: none;
 }
+#article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    background-color: #3c6a759f;
+    margin-bottom: 10px;
+}
+#article p {
+    grid-column: 1/2;
+    margin: 0 auto;
+    padding: 20px;
+}
+#fishing {
+    max-width: 350px;
+    grid-column: 2/3;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
 
 footer{
     background-color: #3C6A75;
