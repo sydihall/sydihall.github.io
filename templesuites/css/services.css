@@ -55,11 +55,9 @@ nav {
     background-color: #127eb1;
 }
 main {
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 main div {
     background-color: aliceblue;
@@ -124,5 +122,32 @@ footer{
     }
     .hidden {
         display: none;
+    }
+}
+@media only screen and (min-width: 54.5em){
+    #navigation, main {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        width: 900px;
+        margin: 0 auto;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer img {
+        width: 250px;
+        padding: 20px;
+        padding-left: 100px;
+    }
+    .hidden {
+        display: none;
+    }
+    #footergrid {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

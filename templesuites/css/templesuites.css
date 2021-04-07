@@ -51,7 +51,7 @@ nav {
     font-weight: bold;
 }
 main {
-    max-width: 900px;
+    max-width: 100%;
     background-color: aliceblue;
     margin: 0 auto;
 }
@@ -60,14 +60,12 @@ main {
     background-color: #127eb1;
 }
 #dc {
-    width: 850px;
+    max-width: 100%;
     margin-top: 20px;
     padding: 10px;
 }
 .threepics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .threepics img {
@@ -76,22 +74,18 @@ main {
     border-radius: 10px;
 }
 #sealing {
-    max-width: 300px;
+    max-width: 100%;
     align-self: center;
 }
 .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 100%;
     padding: 5px;
 }
 .home img {
-    grid-column: 1/2;
     margin: 0 auto;
 }
 .note {
-    grid-column: 2/3;
     max-width: 350px;
     margin: 0 auto;
     padding: 5px;
@@ -101,7 +95,7 @@ footer{
     margin: 0 auto;
 }
 #midfoot {
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     display: grid;
@@ -147,5 +141,73 @@ footer{
     }
     .hidden {
         display: none;
+    }
+}
+
+/*full size */
+@media only screen and (min-width: 54.5em){
+    #navigation, main {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hero img {
+        width: 1200px;
+    }
+    main {
+        max-width: 900px;
+    }
+    .home {
+        max-width: 900px;
+    }
+    #dc {
+        width: 850px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .threepics {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .threepics img {
+        max-width: 250px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    #sealing {
+        max-width: 300px;
+        align-self: center;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 5px;
+    }
+    .home img {
+        grid-column: 1/2;
+        margin: 0 auto;
+    }
+    .note {
+        grid-column: 2/3;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    footer img {
+        width: 250px;
+        padding: 20px;
+        padding-left: 100px;
+    }
+    .hidden {
+        display: none;
+    }
+    #footergrid {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
