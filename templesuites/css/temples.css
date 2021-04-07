@@ -54,6 +54,16 @@ nav {
     color:white;
     background-color: #127eb1;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+main img {
+    max-width: 400px;
+}
 footer{
     background-color: #42B7ED;
     margin: 0 auto;
@@ -64,6 +74,10 @@ footer{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#houston img {
+    margin-top: 50px;
 }
 #map {
     grid-column: 1/2;

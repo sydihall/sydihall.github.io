@@ -1,3 +1,4 @@
+console.log("hey");
 
 window.addEventListener('load', (event)=>{
     const b = document.querySelector ("#ban");
@@ -35,10 +36,12 @@ fetch(URL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);
+    console.log('hi');
     const temples = jsonObject['temples'];
 
     for(i = 0; i < temples.length; i++){
-        if(temples[i].name == 'Houston Texas'|| temples[i].name == 'Dallas Texas'|| temples[i].name == 'San Antonio Texas' || temples[i].name == 'Lubbock Texas' ){
+        console.log('sydi');
+            let image = document.createElement('img');
             let temple_name  = document.createElement('section');
             let text = document.createElement('div');
             let h1 = document.createElement('h1');    
@@ -61,7 +64,6 @@ fetch(URL)
             
 
             text.appendChild(h1);
-            text.appendChild(hr)
             text.appendChild(address);
             text.appendChild(email);
             text.appendChild(phone);
@@ -72,18 +74,18 @@ fetch(URL)
             temple_name.appendChild(text);
             temple_name.appendChild(image);
 
+            console.log(temple_name);
             if(temples[i].name == 'Houston Texas Temple'){
                 document.getElementById('houston').appendChild(temple_name);
               }
               else if(temples[i].name == 'Dallas Texas Temple'){
                 document.getElementById('dallas').appendChild(temple_name);
               }
-              else if (temples[i].name == 'San Antonio Temple'){
+              else if (temples[i].name == 'San Antonio Texas Temple'){
                 document.getElementById('sanantonio').appendChild(temple_name);
               }
               else if (temples[i].name == 'Lubbock Texas Temple'){
                 document.getElementById('lubbock').appendChild(temple_name);
             }
         }
-      }
 });
