@@ -1,3 +1,15 @@
+window.addEventListener('load',(event)=>{
+    // add code here to run when page loads
+    const menubutton = document.querySelector('.menu');
+    const mainnav = document.querySelector('.navigation')   
+    
+    menubutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+    
+    // To solve the mid resizing issue with responsive class on
+    window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+});
+
+
 const URL = 'https://sydihall.github.io/templesuites/js/temples.json';
 
 fetch(URL)
@@ -44,4 +56,4 @@ fetch(URL)
             temple_name.appendChild(image);
 
         }
-    };
+    }});
