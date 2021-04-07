@@ -9,6 +9,19 @@ window.addEventListener('load',(event)=>{
     window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 });
 
+window.addEventListener('load', (event)=>{
+    const lu = document.querySelector('#lastupdated');
+    lu.textContent = document.lastModified;
+  
+    const cry = document.querySelector("#copyrightyear");
+    cry.textContent = new Date().getFullYear();
+  
+    const b =document.querySelector("#banner");
+    today = new Date().getDay();
+    if (today==5){
+        b.style.display = "block";
+    }
+  });
 
 const URL = 'https://sydihall.github.io/templesuites/js/temples.json';
 
@@ -54,6 +67,21 @@ fetch(URL)
 
             temple_name.appendChild(text);
             temple_name.appendChild(image);
+
+            if(temples[i].name == 'Houston Texas Temple'){
+                document.getElementById('houston').appendChild(temple_name);
+              }
+              else if(temples[i].name == 'Dallas Texas Temple'){
+                document.getElementById('dallas').appendChild(temple_name);
+              }
+              else if (temples[i].name == 'San Antonio Temple'){
+                document.getElementById('sanantonio').appendChild(temple_name);
+              }
+              else if (temples[i].name == 'Lubbock Texas Temple'){
+                document.getElementById('lubbock').appendChild(temple_name);
+              }
+            }
+          };
 
         }
     }});
