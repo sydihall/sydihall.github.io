@@ -1,0 +1,44 @@
+{
+    "temples":[
+    {
+        "name":"Houston Texas Temple",
+        "image":"houston.jpg",
+        "address":"15725 Champion Forest Dr, Spring, TX 77379",
+        "email":"temples@lds.org",
+        "phone":"(281)376-6804",
+        "services":"Distribution Center on Temple Grounds, Clothing available to rent",
+        "history":"Plans to construct the temple were announced 30 September 1997; Church leaders broke ground 13 June 1998 and Gordon B. Hinckley, president of The Church of Jesus Christ of Latter-day Saints (1995-2008), dedicated the Houston Texas Temple 26 August 2000. The temple serves Latter-day Saints in Houston and the surrounding area.",
+        "closure":"Closed in 2017-2018 (hurricane Harvey flooding), 2020 (Covid19 Closures)"
+    },
+    {
+        "name":"Dallas Texas Temple",
+        "image":"dallas.jpg",
+        "address":"6363 Willow Lane Dallas, Texas",
+        "email":"temples@lds.org",
+        "phone":"(280)374-6774",
+        "services":"Distribution Center on Temple Grounds, Clothing available to rent",
+        "history":"Plans to construct the temple were announced 1 April 1981, Church leaders broke ground 22 January 1983, and President Gordon B. Hinckley, then a counselor in the First Presidency of The Church of Jesus Christ of Latter-day Saints, dedicated the Dallas Texas Temple 19 October 1984. After a remodel, President Hinckley rededicated the temple 5 March 1989. The temple serves Latter-day Saints in Texas and Louisiana.",
+        "closure":"Closed in 2017-2018 (hurricane Harvey flooding), 2020 (Covid19 Closures)"
+    },
+    {
+        "name":"San Antonio Texas Temple",
+        "image":"sanantonio.jpg",
+        "address":"20080 Stone Oak Parkway San Antonio, Texas",
+        "email":"temples@lds.org",
+        "phone":"(288)256-9014",
+        "services":"Distribution Center on Temple Grounds, Clothing available to rent",
+        "history":"Plans to construct the temple were announced 24 June 2001, Church leaders broke ground 29 March 2003, and Gordon B. Hinckley, president of The Church of Jesus Christ of Latter-day Saints from 1995 to 2008, dedicated the San Antonio Texas Temple 22 May 2005. The temple serves Latter-day Saints in southwest Texas.",
+        "closure":"2020 (Covid19 Closures)"
+    },
+    {
+        "name":"Lubbock Texas Temple",
+        "image":"Lubbock.jpg",
+        "address":"7016 Frankford Avenue Lubbock, Texas",
+        "email":"temples@lds.org",
+        "phone":"(308)296-6231",
+        "services":"Distribution Center on Temple Grounds, Clothing available to rent",
+        "history":"Plans to construct the temple were announced 2 April 2000, Church leaders broke ground 4 November 2000, and Gordon B. Hinckley, president of The Church of Jesus Christ of Latter-day Saints from 1995 to 2008, dedicated the Lubbock Texas Temple 21 April 2002. The temple serves Latter-day Saints in west Texas and eastern New Mexico.",
+        "closure":"2020-2021 (Covid19 Closures)"
+    }]
+}
+

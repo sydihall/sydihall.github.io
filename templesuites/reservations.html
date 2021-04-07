@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reservations.css" rel="stylesheet">
+    <script src="js/templesuites.js"></script>
+    <title>Temple Inn and Suites</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">       
+</head>
+<body>
+    <div id="heading">
+        <img src="images/logo.png" alt= "temple logo" id="screenshots">
+        <h2 id ='title'>Temple Inn and Suites</h2>
+    </div>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" class="ham">&#9776;</a></li>
+            <li><a href="templesuites.html" class= "active">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Book Your Stay Now!</h1>
+        <form>
+            <section id="contactinfo">
+                <h2>Contact Info</h2>
+                <label for="name">Full name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name..."><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email..."><br>
+                <label for="number">Phone Number:</label><br>
+                <input type="tel" id="number" name="number" placeholder="(208)-..."><br>
+                <label for="zip">Zip Code</label><br>
+                <input type="number" id="zip" name="zip" placeholder="83440"><br>
+            </section>
+            <section id="reservations">
+                <h2>Reservation Details</h2>
+                <label for="fromdate">Date of Reservation:</label><br>
+                <input type="datetime" id="fromdate" name="fromdate" placeholder="Start Date..."><br>
+                <label for="todate">to </label>
+                <input type="datetime" id="todate" name="todate" placeholder="End Date..."><br>
+                <label for="rooms">Number of Rooms:</label><br>
+                <input type="number" id="rooms" name="rooms"><br>
+                <label for="roomtype">Type of Rooms:</label>
+                <select id="roomtype" name="roomtype">
+                  <option value="Single">Single</option>
+                  <option value="Double">Double</option>
+                  <option value="Pet-Friendly">Pet-Friendly</option>
+                </select>
+            </section>
+            <section id="questions">
+                <h2>Questions</h2>
+                <label for="questions">Additional Information:</label><br>
+                <textarea name="questions" id="questions" rows="7"></textarea>
+                <br>
+                <input class='button' type="submit">
+            </section>
+          </form>
+    </main>
+    <footer>
+        <div id= 'footergrid'>
+            <section id='midfoot'>
+                <div id= 'contact'>
+                    <h2> Contact Information</h2>
+                    <h3>Phone Number</h3>
+                    <p>(208) 496-1411</p>
+                    <h3>Address</h3>
+                <p>525 S Center St, Rexburg, ID 83460</p>
+                </div>
+                <img id='map' src="images/map.jpg" alt ="map">
+            </section>
+            <div class="footerBar">
+                <p class='legal'>&copy; <span id='copyrightyear'></span> | Sydi Hall | Texas | <a href='https://www.byui.edu'>BYU- Idaho</a></p>
+                <p class='highlight'>Last Updated: <span id='lastupdated'></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

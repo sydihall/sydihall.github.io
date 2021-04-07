@@ -1,0 +1,109 @@
+body {
+	margin: 0 auto;
+	max-width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color:white;
+	text-align: center;
+}
+#heading{
+    text-align: center;
+    background-color: #42B7ED;
+    width: 100%;
+    margin: 0 auto;
+}
+#heading img {
+    max-width: 10%;
+    float: center;
+    padding: 10px;
+}
+#title {
+    padding: 5px;
+    font-size:xx-large;
+    margin: 0;
+}
+nav {
+    margin : 0 auto;
+    max-width: 360px;
+    background-color: #42B7ED;
+}
+.responsive {
+    display: block;
+}
+#navigation {
+    list-style: none;
+    padding:0;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+}
+#navigation li:first-child {
+    display: block;
+}
+#navigation li{
+    display:none;
+}
+#navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus{
+    display: block;
+    padding: 0.75em;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navigation a:hover{
+    color:white;
+    background-color: #127eb1;
+}
+footer{
+    background-color: #42B7ED;
+    margin: 0 auto;
+}
+#midfoot {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#map {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
+    max-width: 175px;
+    padding: 10px;
+}
+#contact {
+    grid-column: 2/3;
+    line-height: 10px;
+}
+.footerBar {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+
+
+
+@media only screen and (min-width:34.5em){
+    nav{
+        max-width: 100%;
+        text-align: center;
+    }
+    #navigation {
+        grid-template-columns: repeat(5, auto);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #navigation li {
+        display: block;
+    }
+    #navigation a:link, #navigation a:visited, #navigation a:hover, #navigation a:active, #navigation a:focus{
+        text-align: center;
+    }
+    #navigation li:first-child {
+        display:none;
+    }
+    .hidden {
+        display: none;
+    }
+}
