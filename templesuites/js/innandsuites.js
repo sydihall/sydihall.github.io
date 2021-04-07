@@ -1,12 +1,16 @@
-window.addEventListener('load',(event)=>{
-    // add code here to run when page loads
-    const menubutton = document.querySelector('.menu');
-    const mainnav = document.querySelector('.navigation')   
-    
-    menubutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-    
-    // To solve the mid resizing issue with responsive class on
-    window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+
+window.addEventListener('load', (event)=>{
+    const b = document.querySelector ("#ban");
+    today = new Date().getDay();
+    if (today==5){
+        b.style.display = "block";
+    }
+    const hambutton = document.querySelector('.ham');
+    const nav = document.querySelector('#navigation');
+    hambutton.addEventListener('click',() => {nav.classList.toggle('responsive');}, false);
+
+    window.onresize = () => { if (window.innerWidth > 552) nav.classList.remove('responsive'); };
+
 });
 
 window.addEventListener('load', (event)=>{
@@ -23,7 +27,7 @@ window.addEventListener('load', (event)=>{
     }
   });
 
-const URL = 'https://sydihall.github.io/templesuites/js/temples.json';
+const URL = 'https://sydihall.github.io/templesuites/temples.json';
 
 fetch(URL)
 .then(function (response) {
@@ -79,9 +83,7 @@ fetch(URL)
               }
               else if (temples[i].name == 'Lubbock Texas Temple'){
                 document.getElementById('lubbock').appendChild(temple_name);
-              }
             }
-          };
-
         }
-    }});
+      }
+});
